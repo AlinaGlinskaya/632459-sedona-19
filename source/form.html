@@ -35,6 +35,65 @@
       <img class="banner__text" alt="Седона">
     </section>
 
+    <div class="page__title">
+      <p class="page__title-heading">Оставьте свой отзыв</p>
+      <p class="page__title-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+
+    <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
+
+      <fieldset class="review-form__group name-fieldset">
+        <legend class="name-fieldset__title">Представьтесь:</legend>
+        <label class="name-fieldset__text" for="name">Имя<sup>*</sup>:</label>
+        <input class="name-fieldset__input" type="text" name="name" id="name" placeholder="Петр" required>
+        <label class="name-fieldset__text" for="surname">Фамилия<sup>*</sup>:</label>
+        <input class="name-fieldset__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
+        <label class="name-fieldset__text" for="patronymic">Отчество:</label>
+        <input class="name-fieldset__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
+      </fieldset>
+
+      <fieldset class="review-form__group contacts-fieldset">
+        <legend class="contacts-fieldset__title">Контактная информация:</legend>
+        <label class="contacts-fieldset__text" for="phone">Контактный телефон<sup>*</sup>:</label>
+        <input class="contacts-fieldset__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+        <span class="contacts-fieldset__icon contacts-fieldset__icon--phone">Значок телефона</span>
+        <label class="contacts-fieldset__text" for="email">Электронная почта<sup>*</sup>:</label>
+        <input class="contacts-fieldset__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
+        <span class="contacts-fieldset__icon contacts-fieldset__icon--email">Значок конверта</span>
+      </fieldset>
+
+      <fieldset class="review-form__group impression-fieldset">
+        <legend class="impression-fieldset__title">Ваше общее впечатление:</legend>
+        <label class="impression-fieldset__text" for="positive">Скорее положительное</label>
+        <input class="impression-fieldset__input" type="radio" name="impression" id="positive" checked>
+        <label class="impression-fieldset__text" for="negative">Скорее отрицательное</label>
+        <input class="impression-fieldset__input" type="radio" name="impression" id="negative">
+        <label class="impression-fieldset__text" for="neutral">Затрудняюсь ответить</label>
+        <input class="impression-fieldset__input" type="radio" name="impression" id="neutral">
+      </fieldset>
+
+      <fieldset class="review-form__group showplaces-fieldset">
+        <legend class="showplaces-fieldset__title">Посещенные достопримечательности:</legend>
+        <label class="showplaces-fieldset__text" for="bridge">Мост Дьявола</label>
+        <input class="showplaces-fieldset__input" type="checkbox" name="showplace" id="bridge" checked>
+        <label class="showplaces-fieldset__text" for="mountain">Гора-Колокол</label>
+        <input class="showplaces-fieldset__input" type="checkbox" name="showplace" id="mountain" checked>
+        <label class="showplaces-fieldset__text" for="park">Слайд-парк</label>
+        <input class="showplaces-fieldset__input" type="checkbox" name="showplace" id="park" checked>
+        <label class="showplaces-fieldset__text" for="rocks">Красные скалы</label>
+        <input class="showplaces-fieldset__input" type="checkbox" name="showplace" id="rocks">
+      </fieldset>
+
+      <fieldset class="review-form__group comment-fieldset">
+        <legend class="comment-fieldset__title">Опишите свои эмоции:</legend>
+        <textarea class="comment-fieldset__field" placeholder="Опишите подробно все свои восторги"></textarea>
+      </fieldset>
+
+      <div class="review-form__button-wrapper">
+        <button class="button review-form__button" type="submit">Отправить отзыв</button>
+      </div>
+    </form>
+
     <footer class="page-footer">
       <a class="page-footer__link">#VisitSedona</a>
       <ul class="page-footer__social social__list">

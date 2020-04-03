@@ -1,0 +1,35 @@
+.impression-fieldset__text {
+  position: relative;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    top: -12px;
+    left: 5px;
+    content: "";
+    width: 46px;
+    height: 46px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+  }
+}
+
+.impression-fieldset__wrapper {
+  height: 30px;
+  margin: 30px 0;
+}
+
+.impression-fieldset__wrapper input:checked + .impression-fieldset__text::after {
+  position: absolute;
+  top: 3px;
+  left: 20px;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: #333333;
+  border-radius: 50%;
+}
+

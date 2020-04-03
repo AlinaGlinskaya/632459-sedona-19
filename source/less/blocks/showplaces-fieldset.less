@@ -1,0 +1,32 @@
+.showplaces-fieldset__text {
+  position: relative;
+  padding-left: 70px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -10px;
+    left: 5px;
+    width: 46px;
+    height: 46px;
+    background-color: #eeeeee;
+    border-radius: 10%;
+  }
+}
+
+.showplaces-fieldset__wrapper {
+  margin: 40px 0;
+}
+
+.showplaces-fieldset__wrapper input:checked + .showplaces-fieldset__text::after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 18px;
+  width: 24px;
+  height: 16px;
+  background-image: url(../../img/icon-tick.svg);
+}

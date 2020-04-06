@@ -8,6 +8,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+  &--inner-page {
+    @media (min-width: @tablet-width) {
+      font-size: 30px;
+    }
+  }
 }
 
 .page-title__text {
@@ -16,4 +24,9 @@
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  &--inner-page {
+    @media (min-width: @tablet-width) {
+      line-height: 24px;
+    }
+  }
 }

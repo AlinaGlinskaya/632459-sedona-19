@@ -1,11 +1,17 @@
 .page-header {
   display: flex;
-  flex-direction: column;
   background-color: #ffffff;
 
   &--menu-closed {
     height: 55px;
     margin-bottom: 30px;
+  }
+
+  @media (max-width: @mobile-width-only) {
+    flex-direction: column;
+  }
+  @media (min-width: @tablet-width) {
+    position: relative;
   }
 }
 
@@ -15,4 +21,13 @@
   height: 83px;
   padding: 0 10px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 325px;
+    top: 0;
+  }
+  @media (min-width: @desktop-width) {
+    left: 542px;
+  }
 }

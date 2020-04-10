@@ -2,6 +2,10 @@
   font-size: 18px;
   line-height: 26px;
   text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .advantages__number,
@@ -15,6 +19,10 @@
 .advantages__text {
   padding: 20px 10px;
   background-color: #81b3d2;
+
+  @media (min-width: @tablet-width) {
+    width: 50%;
+  }
 }
 
 .advantages__text p,
@@ -23,10 +31,40 @@
 }
 
 .advantages__item-wrapper--grey {
-  margin-top: -20px;
   background-color: #eeeeee;
+}
+
+.advantages__item-wrapper--grey .container {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    min-height: 256px;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item--grey {
   padding: 20px 10px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+  }
+}
+
+.advantages__image {
+  display: block;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+
+.advantages__item--town,
+.advantages__item--bridge {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    height: 256px;
+  }
 }

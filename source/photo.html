@@ -35,19 +35,19 @@
 
     <main class="main-content">
 
-    <section class="banner banner--inner-page">
+    <section class="banner banner--inner-page container">
       <img class="banner__text banner__text--short" src="img/text-sedona.svg" alt="Надпись «Седона» на фоне гор">
     </section>
 
-    <div class="page-title page-title--inner-page">
+    <div class="page-title page-title--inner-page container">
       <h1 class="page-title__heading page-title__heading--inner-page">Фото и видео</h1>
       <p class="page-title__text page-title__text--inner-page">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
     </div>
 
-    <section class="photos">
+    <section class="photos container">
       <ul class="photos__list">
         <li class="photos__item">
-          <img class="photos__image" src="img/photo-sunset-mobile@1x.jpg" alt="Фотография дороги среди прерий">
+          <img class="photos__image photos__image--large" src="img/photo-sunset-mobile@1x.jpg" alt="Фотография дороги среди прерий">
           <div class="photos__title">Неродные просторы</div>
           <p class="photos__author">Автор фото: Борис</p>
           <button class="photos__button-like" type="button">Нравится</button>
@@ -110,22 +110,29 @@
 
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__link">#VisitSedona</a>
       <ul class="page-footer__social social-list">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">Седона в Твиттере</a>
+          <a class="social__link social__link--twitter" href="#" aria-label="Седона в Твиттере">
+            <img class="social__icon" src="img/icon-twitter.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">Седона в Фейсбуке</a>
+          <a class="social__link social__link--facebook" href="#" aria-label="Седона в Фейсбуке">
+            <img class="social__icon" src="img/icon-facebook.svg">
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__linl--youtube" href="#">Седона в Ютубе</a>
+          <a class="social__link social__link--youtube" href="#" aria-label="Седона в Ютубе">
+            <img class="social__icon" src="img/icon-youtube.svg">
+          </a>
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
         <p class="copyright__text">Разработано</p>
-        <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+        <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+          <img class="copyright__icon-image" src="img/htmlacademy.svg"></a>
       </div>
     </footer>
 

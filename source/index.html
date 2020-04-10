@@ -43,7 +43,7 @@
       </div>
     </section>
 
-    <div class="page-title">
+    <div class="page-title container">
       <h1 class="page-title__heading">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</h1>
       <p class="page-title__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </div>
@@ -57,19 +57,28 @@
         </div>
         <img class="advantages__image" src="img/main-city-mobile@1x.jpg" alt="Фотография домика в городе">
       </div>
-      <div class="advantages__item features">
+      <div class="advantages__item features container">
         <ul class="features__list">
           <li class="features__item">
-            <h3 class="features__title features__title--housing">Жилье</h3>
+            <div class="features__item-wrapper">
+            <h3 class="features__title">Жилье</h3>
             <p class="features__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </div>
+            <img class="features__icon" src="img/icon-house.svg" alt="Значок дома">
           </li>
           <li class="features__item">
-            <h3 class="features__title features__title--souvenirs">Сувениры</h3>
+            <div class="features__item-wrapper">
+            <h3 class="features__title">Сувениры</h3>
             <p class="features__text">Не только китайского, но и местного производства!</p>
+            </div>
+            <img class="features__icon" src="img/icon-gift.svg" alt="Значок подарка">
           </li>
           <li class="features__item">
-            <h3 class="features__title features__title--food">Еда</h3>
+            <div class="features__item-wrapper">
+            <h3 class="features__title">Еда</h3>
             <p class="features__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <img class="features__icon" src="img/icon-burger.svg" alt="Значок бургера">
           </li>
         </ul>
       </div>
@@ -82,6 +91,7 @@
         <img class="advantages__image" src="img/main-bridge-mobile@1x.jpg" alt="Фотография моста дьявола над пропастью">
       </div>
       <div class="advantages__item-wrapper--grey">
+        <div class="container">
         <div class="advantages__item advantages__item--grey">
           <h2 class="advantages__title">Небольшая площадь</h2>
           <p class="advantages__number">&ndash; №3 &ndash;</p>
@@ -96,6 +106,7 @@
           <h2 class="advantages__title">Мало туристов</h2>
           <p class="advantages__number">&ndash; №5 &ndash;</p>
           <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
         </div>
       </div>
     </section>
@@ -115,22 +126,30 @@
 
   </main>
 
-  <footer class="page-footer">
+  <footer class="page-footer container">
     <a class="page-footer__link">#VisitSedona</a>
     <ul class="page-footer__social social-list">
       <li class="social__item">
-        <a class="social__link social__link--twitter" href="#">Седона в Твиттере</a>
+        <a class="social__link social__link--twitter" href="#" aria-label="Седона в Твиттере">
+          <img class="social__icon" src="img/icon-twitter.svg">
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__link--facebook" href="#">Седона в Фейсбуке</a>
+        <a class="social__link social__link--facebook" href="#" aria-label="Седона в Фейсбуке">
+          <img class="social__icon" src="img/icon-facebook.svg">
+        </a>
       </li>
       <li class="social__item">
-        <a class="social__link social__linl--youtube" href="#">Седона в Ютубе</a>
+        <a class="social__link social__link--youtube" href="#" aria-label="Седона в Ютубе">
+          <img class="social__icon" src="img/icon-youtube.svg">
+        </a>
       </li>
     </ul>
     <div class="page-footer__copyright copyright">
       <p class="copyright__text">Разработано</p>
-      <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive">Логотип HTML Academy</a>
+      <a class="copyright__icon" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип HTML Academy">
+      <img class="copyright__icon-image" src="img/htmlacademy.svg">
+    </a>
     </div>
   </footer>
 

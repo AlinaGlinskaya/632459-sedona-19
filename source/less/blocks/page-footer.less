@@ -1,5 +1,9 @@
 .page-footer {
   margin-top: 50px;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .page-footer__link {
@@ -11,6 +15,9 @@
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social {

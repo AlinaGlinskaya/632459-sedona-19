@@ -1,3 +1,23 @@
+.showplaces-fieldset {
+  width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+.showplaces-fieldset-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-wrap: nowrap;
+  }
+}
+
 .showplaces-fieldset__text {
   position: relative;
   padding-left: 70px;
@@ -17,11 +37,19 @@
   }
 }
 
-.showplaces-fieldset__wrapper {
+.showplaces-fieldset__group {
   margin: 40px 0;
+
+  @media (min-width: @tablet-width) {
+    width: 200px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 250px;
+  }
 }
 
-.showplaces-fieldset__wrapper input:checked + .showplaces-fieldset__text::after {
+.showplaces-fieldset__group input:checked + .showplaces-fieldset__text::after {
   position: absolute;
   content: "";
   top: 5px;

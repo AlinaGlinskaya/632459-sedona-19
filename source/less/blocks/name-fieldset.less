@@ -1,3 +1,13 @@
+.name-fieldset {
+  @media (min-width: @tablet-width) {
+    width: 377px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 540px;
+  }
+}
+
 .name-fieldset__text {
   font-size: 14px;
   line-height: 26px;
@@ -7,6 +17,7 @@
 }
 
 .name-fieldset__input {
+  flex-grow: 1;
   min-width: 200px;
   height: 58px;
   margin-bottom: 10px;
@@ -21,4 +32,9 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+.name-fieldset__wrapper {
+  display: flex;
+  align-items: center;
 }

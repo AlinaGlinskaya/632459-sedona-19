@@ -2,6 +2,31 @@
   display: none;
 }
 
+.contacts-fieldset-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 1000px;
+  }
+}
+
+.contacts-fieldset {
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+  }
+}
+
+.contacts-fieldset__group {
+  @media (min-width: @desktop-width) {
+    width: 500px;
+    display: flex;
+    align-items: center;
+  }
+}
+
 .contacts-fieldset__text {
   padding-left: 20px;
   font-size: 14px;
@@ -10,12 +35,22 @@
   text-transform: uppercase;
 }
 
+.contacts-fieldset__text-contact {
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
 .contacts-fieldset__input {
-  min-width: 280px;
+  width: 100%;
   margin: 0 auto 10px;
   height: 58px;
   background-color: #eeeeee;
   border: none;
+
+  @media (min-width: @desktop-width) {
+    width: 270px;
+  }
 }
 
 .contacts-fieldset__input::placeholder {

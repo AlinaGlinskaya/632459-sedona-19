@@ -8,7 +8,7 @@
   }
 }
 
-.main-nav__button {
+.main-nav__toggle {
   display: none;
 
   @media (max-width: @mobile-width-only) {
@@ -27,10 +27,16 @@
   }
 }
 
-.main-nav--closed .main-nav__button {
+.main-nav--no-js .main-nav__toggle {
+  display: none;
+}
+
+.main-nav--closed .main-nav__toggle {
   background-image: url("../../img/icon-menu.svg");
 }
 
 .main-nav--closed .site-list {
-  display: none;
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
 }

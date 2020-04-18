@@ -2,11 +2,10 @@
   min-height: 389px;
   width: 100%;
   margin-top: -33px;
-  background-image: url("../../img/bg-intro-triangle-mobile.svg"),
-   url("../../img/bg-back-mobile@1x.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../../img/bg-intro-triangle-mobile.svg"), url("../../img/bg-back-mobile@1x.jpg");
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
 
   &--inner-page {
     min-height: 150px;
@@ -14,14 +13,25 @@
   }
 
   @media (min-width: @tablet-width) {
+    min-height: 519px;
     margin-top: 0;
+    background-image: url("../../img/bg-intro-triangle-tablet.svg"), url("../../img/bg-back-tablet@1x.jpg");
+    background-size: contain, cover;
+    background-position: center bottom, center;
+
   }
 }
 
 .banner__text {
+  display: block;
+  width: 280px;
   padding-top: 90px;
-  width: 281px;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 79px;
+    width: 460px;
+  }
 
   &--short {
     display: block;

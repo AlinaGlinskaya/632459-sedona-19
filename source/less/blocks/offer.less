@@ -4,6 +4,8 @@
 
   @media (min-width: @tablet-width) {
     width: 458px;
+    margin-top: 54px;
+    margin-bottom: 60px;
   }
 }
 
@@ -15,6 +17,7 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
     font-size: 30px;
   }
 }
@@ -26,9 +29,15 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 400px;
+    width: 435px;
     margin: 0 auto;
     padding-bottom: 20px;
+  }
+}
+
+.offer__text br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
   }
 }
 
@@ -38,4 +47,8 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 22px;
+  }
 }

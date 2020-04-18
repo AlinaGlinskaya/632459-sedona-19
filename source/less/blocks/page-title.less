@@ -3,8 +3,12 @@
   margin-top: 40px;
   padding: 0 10px;
   min-height: 163px;
-  background-image: url("../../img/bg-intro-triangle-mobile.svg");
-  background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    width: 600px;
+    margin-top: 50px;
+    min-height: 157px;
+  }
 }
 
 .page-title__heading {
@@ -15,7 +19,9 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
+    width: 582px;
     font-size: 21px;
+    word-spacing: 1.1px;
   }
 
   &--inner-page {
@@ -37,5 +43,10 @@
     @media (min-width: @tablet-width) {
       line-height: 24px;
     }
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 580px;
+    letter-spacing: 0.1px;
   }
 }

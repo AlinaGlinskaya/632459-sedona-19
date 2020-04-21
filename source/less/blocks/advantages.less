@@ -15,14 +15,15 @@
   line-height: 21px;
   text-align: center;
   color: #333333;
+  letter-spacing: 0.1px;
 }
 
 .advantages__number {
-  margin: 9px 0;
+  margin: 9px 0 15px;
 }
 
 .advantages__text {
-  padding: 20px 20px 27px 20px;
+  padding: 20px 20px 26px 20px;
   background-color: #81b3d2;
 
   @media (min-width: @tablet-width) {
@@ -40,7 +41,7 @@
   background-color: #eeeeee;
 }
 
-.advantages__item-wrapper--grey .container {
+.advantages__item-wrapper--grey {
   @media (min-width: @tablet-width) {
     display: flex;
     min-height: 256px;
@@ -50,7 +51,7 @@
 }
 
 .advantages__item--grey {
-  padding: 13px 18px;
+  padding: 12px 18px;
   margin: 0 17px;
 
   @media (min-width: @tablet-width) {
@@ -86,17 +87,28 @@
   }
 }
 
-.advantages__item--town .advantages__text {
+.advantages__item--town {
   @media (max-width: @mobile-width-only) {
-    background-image: url("../../img/bg-triangle.svg");
-    background-repeat: no-repeat;
-    background-position: 50% -54px;
-    background-size: 762px 93px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -1px;
+      left: -2px;
+      width: 102%;
+      height: 37px;
+      background-image: url("../../img/bg-triangle.svg");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center bottom;
+    }
   }
 }
 
 .advantages__item--town .advantages__title {
-  padding-top: 40px;
+  padding-top: 41px;
+
   @media (min-width: @tablet-width) {
     padding-top: 27px;
   }
@@ -104,6 +116,7 @@
 
 .advantages__item--bridge .advantages__text {
   padding-top: 25px;
+
   @media (min-width: @tablet-width) {
     order: 2;
     padding-top: 27px;
@@ -111,8 +124,13 @@
 }
 
 .advantages__item--bridge .advantages__title {
-  width: 150px;
-  margin: 17px auto 0;
+  width: 220px;
+  margin: 15px auto 0;
+
+  @media (min-width: @tablet-width) {
+    width: 150px;
+    margin-top: 18px;
+  }
 }
 
 .advantages__item--town .advantages__text,
@@ -138,7 +156,7 @@
 
 .advantages__item--grey .advantages__title {
   @media (min-width: @tablet-width) {
-    margin-top: 0;
-    width: 159px;
+    width: 155px;
+    margin: 0 auto 10px auto;
   }
 }

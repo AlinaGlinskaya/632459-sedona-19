@@ -4,7 +4,15 @@
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
-    margin-top: 29px;
+    justify-content: space-around;
+    min-height: 120px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    margin-left: 115px;
+    margin-right: 116px;
   }
 }
 
@@ -19,11 +27,15 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-    width: 127px;
+    height: 38px;
+    margin: 0 0 0 5px;
   }
 }
 
 .page-footer__social {
   margin: 20px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

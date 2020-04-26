@@ -4,6 +4,15 @@
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    height: 59px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 57px;
+  }
 }
 
 .social__link {
@@ -14,6 +23,10 @@
 
   &--facebook {
     padding-top: 13px;
+
+    @media (min-width: @tablet-width) {
+      width: 47px;
+    }
   }
 }
 

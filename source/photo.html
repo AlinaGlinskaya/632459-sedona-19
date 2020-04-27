@@ -39,7 +39,11 @@
     <main class="main-content">
 
       <section class="banner banner--inner-page">
-        <img class="banner__text banner__text--short" src="img/text-sedona.svg" alt="Надпись «Седона» на фоне гор">
+        <div class="banner__wrapper">
+          <div class="banner__text banner__text--short">
+            <img src="img/text-sedona.svg" alt="Надпись «Седона» на фоне гор">
+          </div>
+        </div>
       </section>
 
       <div class="page-title page-title--inner-page">
@@ -51,31 +55,55 @@
         <ul class="photos__list">
           <li class="photos__item">
             <img class="photos__image photos__image--large" src="img/photo-sunset-mobile@1x.jpg" alt="Фотография дороги среди прерий">
-            <div class="photos__title">Неродные просторы</div>
-            <p class="photos__author">Автор фото: Борис</p>
-            <button class="photos__button-like" type="button">Нравится</button>
-            <span class="photos__likes">1350</span>
+            <div class="photos__caption">
+              <div class="photos__text">
+                <div class="photos__title">Неродные просторы</div>
+                <p class="photos__author">Автор фото: Борис</p>
+              </div>
+              <div class="photos__likes">
+                <button class="photos__like-button" type="button" aria-label="Нравится"></button>
+                <span class="photos__like-amount">1350</span>
+              </div>
+            </div>
           </li>
           <li class="photos__item">
             <img class="photos__image" src="img/photo-cactus-mobile@1x.jpg" alt="Фотография кактуса">
-            <div class="photos__title">Местная растительность</div>
-            <p class="photos__author">Автор фото: Сергей</p>
-            <button class="photos__button-like" type="button">Нравится</button>
-            <span class="photos__likes">143</span>
+            <div class="photos__caption">
+              <div class="photos__text">
+                <div class="photos__title">Местная растительность</div>
+                <p class="photos__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photos__likes">
+                <button class="photos__like-button" type="button" aria-label="Нравится"></button>
+                <span class="photos__like-amount">143</span>
+              </div>
+            </div>
           </li>
           <li class="photos__item">
             <img class="photos__image" src="img/photo-roads-mobile@1x.jpg" alt="Фотография дороги в лесу">
-            <div class="photos__title">Дорога на север</div>
-            <p class="photos__author">Автор фото: Петр</p>
-            <button class="photos__button-like" type="button">Нравится</button>
-            <span class="photos__likes">96</span>
+            <div class="photos__caption">
+              <div class="photos__text">
+                <div class="photos__title">Дорога на север</div>
+                <p class="photos__author">Автор фото: Петр</p>
+              </div>
+              <div class="photos__likes">
+                <button class="photos__like-button" type="button" aria-label="Нравится"></button>
+                <span class="photos__like-amount">96</span>
+              </div>
+            </div>
           </li>
           <li class="photos__item">
             <img class="photos__image" src="img/photo-bridge-mobile@1x.jpg" alt="Фотография моста Дьявола">
-            <div class="photos__title">Мост Дьявола</div>
-            <p class="photos__author">Автор фото: Антон</p>
-            <button class="photos__button-like" type="button">Нравится</button>
-            <span class="photos__likes">254</span>
+            <div class="photos__caption">
+              <div class="photos__text">
+                <div class="photos__title">Мост Дьявола</div>
+                <p class="photos__author">Автор фото: Антон</p>
+              </div>
+              <div class="photos__likes">
+                <button class="photos__like-button" type="button" aria-label="Нравится"></button>
+                <span class="photos__like-amount">254</span>
+              </div>
+            </div>
           </li>
         </ul>
       </section>

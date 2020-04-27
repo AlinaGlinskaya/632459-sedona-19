@@ -9,6 +9,15 @@
     margin-top: 50px;
     min-height: 157px;
   }
+
+  &--inner-page {
+    width: 290px;
+    min-height: 150px;
+
+    @media (min-width: @tablet-width) {
+      width: 460px;
+    }
+  }
 }
 
 .page-title__heading {
@@ -20,11 +29,12 @@
   color: #000000;
 
   @media (min-width: @tablet-width) {
-    width: 582px;
     font-size: 21px;
   }
 
   &--inner-page {
+    word-spacing: normal;
+
     @media (min-width: @tablet-width) {
       font-size: 30px;
     }
@@ -41,12 +51,13 @@
   color: #333333;
 
   &--inner-page {
+    margin-top: 24px;
+    letter-spacing: normal;
+    line-height: 25px;
+
     @media (min-width: @tablet-width) {
       line-height: 24px;
+      margin-top: 30px;
     }
-  }
-
-  @media (min-width: @tablet-width) {
-    width: 580px;
   }
 }

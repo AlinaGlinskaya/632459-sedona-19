@@ -95,6 +95,7 @@
     width: 73%;
   }
 }
+
 .features__icon {
   position: absolute;
   top: 6px;
@@ -105,6 +106,10 @@
   &--present {
     top: 3px;
     height: 37px;
+
+    @media (min-width: @tablet-width) {
+      width: 64px;
+    }
   }
 
   &--burger {
@@ -119,12 +124,6 @@
     width: 76px;
     height: 136px;
     order: -1;
-  }
-
-  &--present {
-    @media (min-width: @tablet-width) {
-      width: 64px;
-    }
   }
 }
 

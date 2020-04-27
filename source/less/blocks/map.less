@@ -14,15 +14,19 @@
 
 .map__marker {
   position: absolute;
-  top: 150px;
-  left: 150px;
+  top: 163px;
+  left: 145px;
+
+  @media (min-width: @tablet-width) {
+    left: 369px;
+  }
 }
 
 .map__image {
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
-    height: 356px;
+    height: 350px;
     width: 100%;
   }
 }

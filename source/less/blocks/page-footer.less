@@ -1,15 +1,24 @@
 .page-footer {
-  margin-top: 50px;
+  margin-top: 34px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    min-height: 120px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    justify-content: space-between;
+    margin-left: 115px;
+    margin-right: 116px;
   }
 }
 
 .page-footer__link {
   display: block;
-  margin: 0 auto 30px;
+  margin: 0 auto 36px;
   width: 136px;
 
   font-size: 21px;
@@ -18,10 +27,15 @@
   text-transform: uppercase;
 
   @media (min-width: @tablet-width) {
-    margin-bottom: 0;
+    height: 38px;
+    margin: 0 0 0 5px;
   }
 }
 
 .page-footer__social {
   margin: 20px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
 }

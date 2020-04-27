@@ -1,19 +1,27 @@
 .offer {
-  margin: 40px auto;
+  margin: 30px auto 49px;
   width: 280px;
 
   @media (min-width: @tablet-width) {
     width: 458px;
+    margin-top: 54px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 67px;
   }
 }
 
 .offer__title {
+  margin-bottom: 20px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-align: center;
 
   @media (min-width: @tablet-width) {
+    margin-bottom: 32px;
     font-size: 30px;
   }
 }
@@ -25,15 +33,30 @@
   text-align: center;
 
   @media (min-width: @tablet-width) {
-    width: 400px;
+    width: 435px;
     margin: 0 auto;
     padding-bottom: 20px;
   }
 }
 
+.offer__text br {
+  @media (max-width: @mobile-width-only) {
+    display: none;
+  }
+}
+
 .offer__button {
   padding: 15px;
+  margin-top: 35px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    margin-top: 23px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-top: 28px;
+  }
 }

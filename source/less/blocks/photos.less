@@ -16,13 +16,13 @@
   @media (min-width: @desktop-width) {
     width: 1200px;
     padding: 0;
+    margin: 26px auto 0;
   }
 }
 
 .photos__caption {
   @media (min-width: @tablet-width) {
     display: flex;
-    margin-top: -3px;
     min-height: 80px;
     background-color: #eaeaea;
   }
@@ -90,6 +90,7 @@
 }
 
 .photos__image {
+  display: block;
   width: 100%;
   max-height: 400px;
 
@@ -132,7 +133,7 @@
 }
 
 .photos__title {
-  margin-top: 12px;
+  margin-top: 15px;
 
   @media (min-width: @tablet-width) {
     margin-top: 0;
@@ -149,16 +150,18 @@
     margin-top: auto;
     margin-right: 18px;
   }
+
+  @media (min-width: @desktop-width) {
+    height: 58px;
+  }
 }
 
 .photos__text {
   @media (min-width: @tablet-width) {
     padding: 15px 20px;
   }
-}
 
-.photos__item:first-child {
   @media (min-width: @desktop-width) {
-    margin-bottom: -3px;
+    padding: 17px 21px;
   }
 }

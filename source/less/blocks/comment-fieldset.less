@@ -1,5 +1,13 @@
 .comment-fieldset {
   width: 100%;
+
+  @media (min-width: @tablet-width) {
+    width: 648px;
+    margin: 26px auto 0 auto;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #e6e6e6;
+  }
 }
 
 .comment-fieldset__field {
@@ -8,14 +16,32 @@
   margin: 0 auto;
   min-height: 160px;
   max-height: 80vw;
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
   border: none;
 }
 
 .comment-fieldset__field::placeholder {
-  padding: 15px;
+  padding: 12px 17px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+.comment-fieldset__field-wrapper {
+  padding: 0 20px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+  }
+}
+
+.comment-fieldset__title {
+  padding: 0 0 18px 0;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 72px;
+    margin-bottom: 58px;
+    text-align: center;
+  }
 }

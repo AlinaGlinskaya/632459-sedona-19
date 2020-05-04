@@ -47,9 +47,9 @@
         </div>
       </section>
 
-      <div class="page-title page-title--inner-page">
-        <h1 class="page-title__heading page-title__heading--inner-page">Оставьте свой отзыв</h1>
-        <p class="page-title__text page-title__text--inner-page">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="page-title page-title--form-page">
+        <h1 class="page-title__heading page-title__heading--form-page">Оставьте свой отзыв</h1>
+        <p class="page-title__text page-title__text--form-page">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       </div>
 
       <form class="review-form" action="https://echo.htmlacademy.ru" method="POST">
@@ -57,11 +57,11 @@
         <fieldset class="review-form__group name-fieldset">
           <legend class="name-fieldset__title">Представьтесь:</legend>
           <div class="name-fieldset__wrapper">
-            <label class="name-fieldset__text" for="name">Имя<sup>*</sup>:</label>
+            <label class="name-fieldset__text" for="name">Имя<sup>&#9913;</sup>:</label>
             <input class="name-fieldset__input" type="text" name="name" id="name" placeholder="Петр" required>
           </div>
           <div class="name-fieldset__wrapper">
-            <label class="name-fieldset__text" for="surname">Фамилия<sup>*</sup>:</label>
+            <label class="name-fieldset__text" for="surname">Фамилия<sup>&#9913;</sup>:</label>
             <input class="name-fieldset__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
           </div>
           <div class="name-fieldset__wrapper">
@@ -74,14 +74,14 @@
           <legend class="contacts-fieldset__title">Контактная информация:</legend>
           <div class="contacts-fieldset-wrapper">
             <div class="contacts-fieldset__group">
-              <label class="contacts-fieldset__text" for="phone"><span class="contacts-fieldset__text-contact">Контактный</span> телефон<sup>*</sup>:</label>
+              <label class="contacts-fieldset__text" for="phone"><span class="contacts-fieldset__text-contact">Контактный</span> телефон<sup>&#9913;</sup>:</label>
               <input class="contacts-fieldset__input" type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
-              <span class="contacts-fieldset__icon contacts-fieldset__icon--phone">Значок телефона</span>
+              <span class="contacts-fieldset__icon contacts-fieldset__icon--phone"></span>
             </div>
             <div class="contacts-fieldset__group">
-              <label class="contacts-fieldset__text" for="email">Электронная почта<sup>*</sup>:</label>
+              <label class="contacts-fieldset__text" for="email">Электронная почта<sup>&#9913;</sup>:</label>
               <input class="contacts-fieldset__input" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-              <span class="contacts-fieldset__icon contacts-fieldset__icon--email">Значок конверта</span>
+              <span class="contacts-fieldset__icon contacts-fieldset__icon--email"></span>
             </div>
           </div>
         </fieldset>
@@ -126,12 +126,14 @@
 
         <fieldset class="review-form__group comment-fieldset">
           <legend class="comment-fieldset__title">Опишите свои эмоции:</legend>
-          <textarea class="comment-fieldset__field" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="comment-fieldset__field-wrapper">
+            <textarea class="comment-fieldset__field" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
         </fieldset>
 
         <div class="review-form__button-wrapper">
           <button class="button review-form__button" type="submit">Отправить отзыв</button>
-          <div class="review-form__remark"><small>*</small> &ndash; Обязательные поля</div>
+          <div class="review-form__remark"><sup>&#9913;</sup> &ndash; Обязательные поля</div>
         </div>
       </form>
 

@@ -1,34 +1,83 @@
 .contacts-fieldset__icon {
-  display: none;
+  position: absolute;
+  top: 31px;
+  right: 0;
+  display: block;
+  width: 55px;
+  height: 58px;
+  background-color: #e6e6e6;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+
+  @media (min-width: @tablet-width) {
+    width: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
+
+  &--phone {
+    background-image: url("../../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../../img/icon-mail.svg");
+  }
 }
 
 .contacts-fieldset-wrapper {
+  padding: 0 20px;
+
   @media (min-width: @tablet-width) {
-    width: 768px;
+    width: 648px;
+    padding: 0;
   }
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1000px;
+    justify-content: space-between;
+    width: 1005px;
   }
 }
 
 .contacts-fieldset {
+  height: 280px;
+
+  @media (min-width: @tablet-width) {
+    margin: 42px auto 28px auto;
+    padding: 5px 0;
+    border: none;
+    border-top: 1px solid #e6e6e6;
+  }
+
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
+    margin: 40px auto 20px auto;
+    height: 192px;
   }
 }
 
 .contacts-fieldset__group {
+  position: relative;
+
   @media (min-width: @desktop-width) {
-    width: 500px;
+    width: auto;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+  }
+}
+
+.contacts-fieldset__group:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 24px;
   }
 }
 
 .contacts-fieldset__text {
-  padding-left: 20px;
+  display: block;
+  padding-left: 22px;
+  margin-bottom: 5px;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -43,13 +92,21 @@
 
 .contacts-fieldset__input {
   width: 100%;
-  margin: 0 auto 10px;
+  margin: 0 auto 13px;
+  padding: 0 10px;
   height: 58px;
-  background-color: #eeeeee;
+  background-color: #f2f2f2;
   border: none;
 
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+    padding: 0 12px;
+  }
+
   @media (min-width: @desktop-width) {
-    width: 270px;
+    width: 314px;
+    margin: 0;
+    margin-left: 15px;
   }
 }
 
@@ -59,4 +116,16 @@
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+.contacts-fieldset__title {
+  @media (min-width: @tablet-width) {
+    padding: 0 60px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+  }
 }

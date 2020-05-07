@@ -1,15 +1,25 @@
 .review-form {
-  margin-top: 20px;
+  margin-top: 15px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
+    width: 768px;
+    margin: 18px auto 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    margin: 4px auto 0 auto;
   }
 }
 
 .review-form fieldset {
-  padding: 15px;
-  border: 0;
+  @media (max-width: @mobile-width-only) {
+    margin-left: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .review-form__button {
@@ -22,12 +32,15 @@
   border: none;
 
   @media (min-width: @tablet-width) {
-    margin-left: 30px;
+    margin-left: 0;
     margin-right: auto;
+    width: 324px;
+    padding: 15px 34px 15px 20px;
   }
 
   @media (min-width: @desktop-width) {
     width: 480px;
+    padding: 15px 20px;
   }
 }
 
@@ -35,12 +48,24 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  text-align: center;
   text-transform: uppercase;
+
+  @media (max-width: @mobile-width-only) {
+    width: 100%;
+    padding: 17px 5px 22px 5px;
+    text-align: center;
+    border-top: 1px solid #eeeeee;
+  }
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
 }
 
 .review-form__group {
-  margin-bottom: 20px;
+  @media (max-width: @mobile-width-only) {
+    margin-bottom: 7px;
+  }
 }
 
 .review-form__remark {
@@ -49,7 +74,7 @@
   }
 
   @media (min-width: @tablet-width) {
-    margin-right: 20px;
+    margin-top: 5px;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
@@ -58,10 +83,21 @@
 }
 
 .review-form__button-wrapper {
+  margin-top: 52px;
+  margin-bottom: 75px;
+
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 100%;
+    width: 648px;
+    margin: 0 auto;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 66px;
+    margin-top: 58px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 72px;
+    width: 960px;
   }
 }

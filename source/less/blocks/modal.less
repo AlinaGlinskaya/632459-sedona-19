@@ -1,6 +1,14 @@
 .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translateX(-50%) translateY(-20%);
+  display: none;
   width: 320px;
   margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
 
   @media (min-width: @tablet-width) {
     min-height: 347px;
@@ -16,27 +24,25 @@
 }
 
 .modal__title {
-  padding: 30px 0;
+  padding: 44px 0 26px 0;
   font-size: 18px;
   line-height: 26px;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
+    line-height: 40px;
   }
 }
 
 .modal__text {
   width: 255px;
-  margin-bottom: 10px;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
 }
 
 .modal__button {
-  width: 280px;
   padding: 15px;
-  margin: 20px auto;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -55,34 +61,76 @@
   }
 }
 
+.modal__button--success {
+  width: 280px;
+  margin: 17px auto 20px auto;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    width: 458px;
+  }
+}
+
+.modal__button--error {
+  width: 178px;
+  margin: 0 auto;
+
+  @media (min-width: @tablet-width) {
+    width: 270px;
+    margin-bottom: 50px;
+  }
+}
+
 .modal-error {
   min-height: 280px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 7px;
     width: 400px;
   }
 }
 
 .modal__button-wrapper {
-  padding: 5px 10px;
+  padding: 2px 10px;
   background-color: #eeeeee;
+
+  @media (min-width: @tablet-width) {
+    padding: 45px 10px 50px 10px;
+  }
 }
 
-.modal-success .modal__text {
+.modal__text--success {
+  margin-bottom: 35px;
+
   @media (min-width: @tablet-width) {
     width: 460px;
+    margin-bottom: 32px;
   }
 }
 
-.modal-error .modal__text {
+.modal__text--error {
+  margin-bottom: 25px;
+
   @media (min-width: @tablet-width) {
     width: 320px;
+    margin-bottom: 34px;
   }
 }
 
-.modal-error .modal__title {
+.modal__title--error {
+  @media (min-width: @tablet-width) {
+    width: 220px;
+    padding: 44px 0 23px 0;
+  }
+
   @media (min-width: @desktop-width) {
     width: 215px;
     line-height: 40px;
+  }
+}
+
+.modal__title--success {
+  @media (min-width: @tablet-width) {
+    padding: 56px 0 23px 0;
   }
 }

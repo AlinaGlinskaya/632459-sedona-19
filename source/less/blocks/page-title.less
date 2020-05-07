@@ -1,7 +1,6 @@
 .page-title {
-  width: 282px;
   margin: 40px auto 0;
-  padding: 0 10px;
+  padding: 0 25px;
   min-height: 163px;
 
   @media (min-width: @tablet-width) {
@@ -10,13 +9,22 @@
     min-height: 157px;
   }
 
-  &--inner-page {
-    width: 290px;
+  &--form-page,
+  &--photo-page {
     min-height: 150px;
 
     @media (min-width: @tablet-width) {
       width: 460px;
+      padding: 0 15px;
     }
+  }
+}
+
+.page-title--form-page {
+  padding: 0 23px;
+
+  @media (min-width: @tablet-width) {
+    width: 483px;
   }
 }
 
@@ -32,7 +40,8 @@
     font-size: 21px;
   }
 
-  &--inner-page {
+  &--form-page,
+  &--photo-page {
     word-spacing: normal;
 
     @media (min-width: @tablet-width) {
@@ -50,7 +59,8 @@
   letter-spacing: 0.1px;
   color: #333333;
 
-  &--inner-page {
+  &--form-page,
+  &--photo-page {
     margin-top: 24px;
     letter-spacing: normal;
     line-height: 25px;

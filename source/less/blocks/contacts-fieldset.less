@@ -14,6 +14,10 @@
     width: 58px;
   }
 
+  @media (min-width: @desktop-width) {
+    top: 0;
+  }
+
   &--phone {
     background-image: url("../../img/icon-phone.svg");
   }
@@ -25,6 +29,7 @@
 
 .contacts-fieldset-wrapper {
   padding: 0 20px;
+
   @media (min-width: @tablet-width) {
     width: 648px;
     padding: 0;
@@ -32,7 +37,8 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    width: 1000px;
+    justify-content: space-between;
+    width: 1005px;
   }
 }
 
@@ -47,7 +53,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin: 0 auto;
+    margin: 40px auto 20px auto;
+    height: 192px;
   }
 }
 
@@ -55,9 +62,15 @@
   position: relative;
 
   @media (min-width: @desktop-width) {
-    width: 500px;
+    width: auto;
     display: flex;
-    align-items: center;
+    align-items: baseline;
+  }
+}
+
+.contacts-fieldset__group:last-child {
+  @media (min-width: @desktop-width) {
+    margin-right: 24px;
   }
 }
 
@@ -91,7 +104,9 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 270px;
+    width: 314px;
+    margin: 0;
+    margin-left: 15px;
   }
 }
 
@@ -108,5 +123,9 @@
     padding: 0 60px;
     margin-bottom: 20px;
     text-align: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
   }
 }

@@ -8,31 +8,49 @@
   }
 }
 
-.main-nav__toggle {
-  display: none;
+.main-nav__button {
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin: 0 auto;
 
-  @media (max-width: @mobile-width-only) {
-    position: absolute;
-    display: block;
-    top: 0;
-    right: 0;
-    width: 42px;
-    height: 55px;
-    padding: 20px 32px;
-    background-image: url("../../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: transparent;
-    border: none;
+  &--menu {
+    display: none;
+    fill: #81b3d2;
+  }
+
+  &--cross {
+    fill: #ffffff;
   }
 }
 
-.main-nav--no-js .main-nav__toggle {
+.main-nav__toggler {
+  @media (max-width: @mobile-width-only) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 63px;
+    height: 54px;
+    background-color: transparent;
+    border: none;
+  }
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+
+.main-nav--no-js .main-nav__button--cross {
   display: none;
 }
 
-.main-nav--closed .main-nav__toggle {
-  background-image: url("../../img/icon-menu.svg");
+.main-nav--closed .main-nav__button--menu {
+  display: block;
+}
+
+.main-nav--closed .main-nav__button--cross {
+  display: none;
 }
 
 .main-nav--closed .site-list {

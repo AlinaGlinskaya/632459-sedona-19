@@ -80,15 +80,13 @@
 
 .controls__button {
   border: none;
-  background-repeat: no-repeat;
-  background-position: center;
+  cursor: pointer;
 
   &--replay {
     width: 16px;
     height: 20px;
     margin-right: 102px;
     background-color: transparent;
-    background-image: url("../../img/icon-video-replay.svg");
 
     @media (min-width: @tablet-width) {
       margin-right: 3px;
@@ -103,13 +101,19 @@
     width: 32px;
     height: 20px;
     background-color: transparent;
-    background-image: url("../../img/icon-video-subtitles.svg");
   }
 
   &--fullscreen {
     width: 20px;
     height: 20px;
     background-color: transparent;
-    background-image: url("../../img/icon-video-fullscreen.svg");
+  }
+}
+
+.controls__button-icon {
+  fill: #5c6870;
+
+  @media (min-width: @tablet-width) {
+    fill: #ffffff;
   }
 }

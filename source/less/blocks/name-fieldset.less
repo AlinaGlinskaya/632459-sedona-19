@@ -33,6 +33,16 @@
   background-color: #f2f2f2;
   border: 0;
 
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
+
   @media (min-width: @tablet-width) {
     flex-grow: 1;
     min-width: 175px;

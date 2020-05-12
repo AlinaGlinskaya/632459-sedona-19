@@ -21,6 +21,14 @@
   height: 48px;
   background-color: #81b3d2;
 
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
   &--facebook {
     padding-top: 13px;
 
@@ -28,6 +36,10 @@
       width: 47px;
     }
   }
+}
+
+.social__link:active .social__icon {
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .social__icon {

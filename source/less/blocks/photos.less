@@ -114,21 +114,22 @@
   width: 23px;
   height: 21px;
   margin-right: 10px;
+  background-color: transparent;
   border: none;
-  background-image: url("../../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: #ffffff;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
-    background-color: #eaeaea;
     width: 32px;
     height: 24px;
     margin-right: 0;
   }
+}
+
+.photos__like-icon {
+  fill: #b2b2b2;
 
   @media (min-width: @desktop-width) {
-    background-color: transparent;
+    fill: #ffffff;
   }
 }
 

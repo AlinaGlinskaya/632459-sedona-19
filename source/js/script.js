@@ -1,7 +1,7 @@
 'use strict';
 
 var mainNav = document.querySelector('.main-nav');
-var menuToggler = mainNav.querySelector('.main-nav__toggle');
+var menuToggler = mainNav.querySelector('.main-nav__toggler');
 
 mainNav.classList.remove('main-nav--no-js');
 mainNav.classList.add('main-nav--closed');

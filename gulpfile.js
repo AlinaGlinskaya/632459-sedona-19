@@ -7,6 +7,27 @@ var less = require("gulp-less");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var rename = require("gulp-rename");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+	.pipe(posthtml([
+		include()
+	]))
+	.pipe(gulp.dest("source"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+  .pipe(svgstore({
+    inlineSvg: true
+  }))
+  .pipe(rename("sprite.svg"))
+  .pipe(gulp.dest("source/img"));
+});
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")

@@ -48,15 +48,32 @@
 .offer__button {
   padding: 15px;
   margin-top: 35px;
+  width: 280px;
   font-size: 21px;
+  color: #ffffff;
   line-height: 26px;
   font-weight: 700;
+  border: none;
 
   @media (min-width: @tablet-width) {
     margin-top: 23px;
+    width: 458px;
   }
 
   @media (min-width: @desktop-width) {
     margin-top: 28px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
   }
 }

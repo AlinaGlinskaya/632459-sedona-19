@@ -83,3 +83,15 @@
     margin-bottom: 0;
   }
 }
+
+.impression-fieldset__input:hover + .impression-fieldset__text::before {
+  background-color: #e5e5e5;
+}
+
+.impression-fieldset__input:active + .impression-fieldset__text::before {
+  background-color: #d5d5d5;
+}
+
+.impression-fieldset__input:active + .impression-fieldset__text::after {
+  opacity: 0.3;
+}

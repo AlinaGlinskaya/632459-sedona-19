@@ -63,7 +63,7 @@
   }
 }
 
-.controls__button--scroll {
+.controls__scroller {
   position: absolute;
   top: 18px;
   left: 59px;
@@ -71,6 +71,7 @@
   height: 8px;
   background-color: #ffffff;
   border-radius: 50%;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     top: 42px;
@@ -79,14 +80,15 @@
 }
 
 .controls__button {
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
   &--replay {
     width: 16px;
-    height: 20px;
     margin-right: 102px;
-    background-color: transparent;
 
     @media (min-width: @tablet-width) {
       margin-right: 3px;
@@ -99,21 +101,35 @@
 
   &--subtitles {
     width: 32px;
-    height: 20px;
-    background-color: transparent;
   }
 
   &--fullscreen {
     width: 20px;
-    height: 20px;
-    background-color: transparent;
   }
 }
 
 .controls__button-icon {
   fill: #5c6870;
 
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     fill: #ffffff;
+
+    &:hover {
+      fill: #ffffff;
+      opacity: 0.6;
+    }
+
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
   }
 }

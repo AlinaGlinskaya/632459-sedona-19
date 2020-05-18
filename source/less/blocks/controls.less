@@ -16,12 +16,14 @@
     bottom: 0;
     width: 648px;
     height: 92px;
-    padding: 0 36px;
+    padding-left: 35px;
+    padding-right: 40px;
     background-color: rgba(0, 0, 0, 0.6);
   }
 
   @media (min-width: @desktop-width) {
     width: 800px;
+    padding-right: 43px;
   }
 }
 
@@ -37,18 +39,20 @@
   @media (min-width: @tablet-width) {
     position: static;
     width: 389px;
+    margin-right: 13px;
     background-color: transparent;
   }
 
   @media (min-width: @desktop-width) {
     width: 540px;
+    margin-right: 18px;
   }
 }
 
 .controls__scale {
   position: relative;
   display: block;
-  margin: 20px auto 0 auto;
+  margin: 23px auto 0 auto;
   width: 235px;
   height: 3px;
   background-color: #ffffff;
@@ -56,6 +60,7 @@
 
   @media (min-width: @tablet-width) {
     width: 389px;
+    margin: 20px auto 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,7 +70,7 @@
 
 .controls__scroller {
   position: absolute;
-  top: 18px;
+  top: 20px;
   left: 59px;
   width: 8px;
   height: 8px;
@@ -80,7 +85,7 @@
 }
 
 .controls__button {
-  height: 20px;
+  height: 23px;
   padding: 0;
   background-color: transparent;
   border: none;

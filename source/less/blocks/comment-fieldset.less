@@ -19,10 +19,20 @@
   display: block;
   width: 100%;
   margin: 0 auto;
-  min-height: 160px;
+  min-height: 156px;
   max-height: 80vw;
+  padding: 11px 20px;
+  color: #000000;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
   background-color: #f2f2f2;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    padding: 15px 20px;
+    min-height: 158px;
+  }
 
   &:hover {
     background-color: #e5e5e5;
@@ -36,15 +46,8 @@
 }
 
 .comment-fieldset__field::placeholder {
-  padding: 12px 17px;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
   color: #000000;
-
-  @media (min-width: @desktop-width) {
-    padding: 13px 18px;
-  }
+  opacity: 1;
 }
 
 .comment-fieldset__field-wrapper {
@@ -59,8 +62,12 @@
   padding: 0 0 18px 0;
 
   @media (min-width: @tablet-width) {
-    padding: 0 72px;
-    margin-bottom: 58px;
+    padding: 0 60px;
+    margin: 0 auto 58px auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 420px;
     text-align: center;
   }
 }

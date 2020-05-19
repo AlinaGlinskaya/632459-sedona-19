@@ -35,6 +35,7 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
@@ -67,7 +68,7 @@ gulp.task("images", function () {
   imagemin.mozjpeg({progressive: true}),
   imagemin.svgo()
   ]))
-  .pipe(gulp.dest("source/img"));
+  .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("webp", function () {
@@ -111,5 +112,5 @@ gulp.task("server", function () {
   done();
   });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "jsmin", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "images", "sprite", "jsmin", "html"));
 gulp.task("start", gulp.series("build", "server"));

@@ -2,7 +2,6 @@
   width: 100%;
   margin-top: -33px;
   background-image: url("../../img/bg-back-mobile@1x.jpg");
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #dbe9f2;
@@ -17,6 +16,7 @@
     @media (min-width: @tablet-width) {
       min-height: 289px;
       margin-bottom: 77px;
+      background-position: 0 100%;
     }
 
     @media (min-width: @desktop-width) {
@@ -27,6 +27,7 @@
 
   &--index-page {
     min-height: 389px;
+    background-position: center;
 
     @media (min-width: @tablet-width) {
       min-height: 519px;
@@ -37,7 +38,6 @@
     margin-top: 0;
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-size: cover;
-    background-position: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../../img/bg-back-tablet@2x.jpg");

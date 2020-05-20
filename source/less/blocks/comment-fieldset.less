@@ -1,5 +1,5 @@
 .comment-fieldset {
-  width: 100%;
+	width: 100%;
 
   @media (min-width: @tablet-width) {
     width: 648px;
@@ -41,13 +41,15 @@
   &:active,
   &:focus {
     background-color: #ffffff;
-    outline: 4px solid #e5e5e5;
+		border: 4px solid #e5e5e5;
+		padding: 11px 16px;
+		outline: none;
   }
 }
 
 .comment-fieldset__field::placeholder {
   color: #000000;
-  opacity: 1;
+	opacity: 1;
 }
 
 .comment-fieldset__field-wrapper {

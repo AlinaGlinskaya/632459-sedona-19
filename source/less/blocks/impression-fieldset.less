@@ -1,10 +1,10 @@
 .impression-fieldset {
-  height: 282px;
+  min-height: 282px;
 
   @media (min-width: @tablet-width) {
     order: -1;
     width: 383px;
-    height: 320px;
+    min-height: 320px;
     padding-left: 48px;
     border: none;
     border-right: 1px solid #e6e6e6;
@@ -12,7 +12,7 @@
 
   @media (min-width: @desktop-width) {
     width: 535px;
-    height: 307px;
+    min-height: 307px;
     margin-left: 66px;
   }
 }
@@ -52,14 +52,19 @@
 }
 
 .impression-fieldset__wrapper {
-  height: 45px;
-  margin: 17px 0 24px 0;
+  height: 35px;
+  margin: 15px 0 35px;
   padding: 0 10px;
 
   @media (min-width: @tablet-width) {
+    height: 45px;
+    margin: 17px 0 33px;
     padding: 0;
-    margin-bottom: 33px;
   }
+}
+
+.impression-fieldset__wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .impression-fieldset__title {
@@ -75,12 +80,6 @@
   }
 }
 
-.impression-fieldset__wrapper:last-child {
-  @media (min-width: @tablet-width) {
-    margin-bottom: 0;
-  }
-}
-
 .impression-fieldset__input:hover + .impression-fieldset__text::before {
   background-color: #e5e5e5;
 }
@@ -91,4 +90,8 @@
 
 .impression-fieldset__input:active + .impression-fieldset__text::after {
   opacity: 0.3;
+}
+
+.impression-fieldset__input:focus + .impression-fieldset__text::before {
+  outline: 2px solid #99bbf2;
 }

@@ -2,16 +2,17 @@
   .list-reset();
   width: 150px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
 
   @media (min-width: @tablet-width) {
     margin: 0;
-    height: 59px;
+    min-height: 59px;
   }
 
   @media (min-width: @desktop-width) {
-    height: 57px;
+    min-height: 57px;
   }
 }
 
@@ -52,4 +53,8 @@
   &--facebook {
     height: 20px;
   }
+}
+
+.social__item {
+  margin-bottom: 5px;
 }
